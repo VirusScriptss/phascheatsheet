@@ -1,0 +1,140 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1c1c1c;
+  color: white;
+  padding: 20px;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #f2f2f2;
+  font-size: 36px;
+  letter-spacing: 2px;
+}
+
+/* Search Bar */
+.search-bar {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #333;
+}
+
+/* Evidence Filter Styles */
+.evidence-filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.evidence-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.evidence-button img {
+  width: 75px;
+  height: 75px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: border-color 0.3s;
+}
+
+.evidence-button.selected img {
+  border-color: #00e6e6;
+}
+
+.evidence-icons img {
+  margin-left: 15px; /* Adds space between the text and the images */
+  width: 40px;
+  height: 40px;
+}
+
+.ghost-name {
+  flex-grow: 1; /* Takes up remaining space and pushes icons to the right */
+}
+
+/* Ghost List Layout */
+.ghost-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ghost-column {
+  width: 48%;
+}
+
+.ghost-item {
+  margin-bottom: 15px;
+}
+
+.ghost-toggle {
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #00e6e6;
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.ghost-toggle:hover {
+  background-color: #444;
+}
+
+.ghost-toggle i {
+  margin-left: 10px;
+  color: #ffcc00;
+}
+
+.ghost-details {
+  display: none;
+  background-color: #444;
+  color: #ddd;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.ghost-details p {
+  margin: 5px 0;
+}
+
+.ghost-details strong {
+  color: #fff;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .ghost-list {
+    flex-direction: column;
+  }
+
+  .ghost-column {
+    width: 100%;
+  }
+}

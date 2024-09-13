@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phasmophobia Ghost Cheat Sheet</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Phasmophobia Cheat Sheet</h1>
+
+      <!-- Search Bar -->
+      <input
+        type="text"
+        id="search-bar"
+        placeholder="Search for a ghost..."
+        class="search-bar"
+      />
+
+      <!-- Evidence Filter Buttons -->
+      <div class="evidence-filter">
+        <button class="evidence-button" data-evidence="freezing">
+          <img src="icons/freezing.png" alt="Freezing Temps" />
+        </button>
+        <button class="evidence-button" data-evidence="ultraviolet">
+          <img src="icons/ultraviolet.png" alt="Ultraviolet" />
+        </button>
+        <button class="evidence-button" data-evidence="emf">
+          <img src="icons/emf.png" alt="EMF Level 5" />
+        </button>
+        <button class="evidence-button" data-evidence="spirit-box">
+          <img src="icons/spirit-box.png" alt="Spirit Box" />
+        </button>
+        <button class="evidence-button" data-evidence="ghost-writing">
+          <img src="icons/ghost-writing.png" alt="Ghost Writing" />
+        </button>
+        <button class="evidence-button" data-evidence="ghost-orbs">
+          <img src="icons/ghost-orbs.png" alt="Ghost Orbs" />
+        </button>
+        <button class="evidence-button" data-evidence="dots">
+          <img src="icons/dots.png" alt="D.O.T.S." />
+        </button>
+      </div>
+
+      <div class="ghost-list">
+        <!-- Column 1 -->
+        <div class="ghost-column">
+          <div
+            class="ghost-item"
+            data-ghost-name="Banshee"
+            data-evidence="ultraviolet,ghost-orbs,dots"
+          >
+            <button class="ghost-toggle">
+              Banshee
+              <span class="evidence-icons">
+                <img src="icons/ultraviolet.png" alt="Ultraviolet" />
+                <img src="icons/ghost-orbs.png" alt="Ghost Orbs" />
+                <img src="icons/dots.png" alt="D.O.T.S." />
+              </span>
+            </button>
+            <div class="ghost-details">
+              <p><strong>Hunting Threshold:</strong> 50% sanity</p>
+              <p>
+                <strong>Special Traits:</strong> Ghost will focus on one player
+                until they are eliminated and gives unique scream on parabolic.
+              </p>
+              <p>
+                <strong>Evidence:</strong> Ultraviolet, Ghost Orbs, D.O.T.S.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="ghost-item"
+            data-ghost-name="Demon"
+            data-evidence="freezing,ultraviolet,ghost-writing"
+          >
+            <button class="ghost-toggle">
+              Demon
+              <span class="evidence-icons">
+                <img src="icons/freezing.png" alt="Fingerprints" />
+                <img src="icons/ultraviolet.png" alt="Ghost Orbs" />
+                <img src="icons/ghost-writing.png" alt="D.O.T.S." />
+              </span>
+            </button>
+            <div class="ghost-details">
+              <p><strong>Hunting Threshold:</strong> 70% sanity</p>
+              <p>
+                <strong>Special Traits:</strong> Ghost hunts more often and
+                aggressively than other ghosts. Can also Hunt at ANY Sanity.
+              </p>
+              <p>
+                <strong>Evidence:</strong> Freezing Temps, Ultraviolet, Ghost
+                Writing
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="ghost-item"
+            data-ghost-name="Deogen"
+            data-evidence="spirit-box,ghost-writing,dots"
+          >
+            <button class="ghost-toggle">
+              Deogen
+              <span class="evidence-icons">
+                <img src="icons/spirit-box.png" alt="Spirit Box" />
+                <img src="icons/ghost-writing.png" alt="Ghost Writing" />
+                <img src="icons/dots.png" alt="D.O.T.S." />
+              </span>
+            </button>
+            <div class="ghost-details">
+              <p><strong>Hunting Threshold:</strong> 40% sanity</p>
+              <p>
+                <strong>Special Traits:</strong> Ghost moves slowly but will
+                always track the player, making hiding ineffective.
+              </p>
+              <p>
+                <strong>Evidence:</strong> Spirit Box, Ghost Writing, D.O.T.S.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="ghost-item"
+            data-ghost-name="Goryo"
+            data-evidence="dots,emf,ultraviolet"
+          >
+            <button class="ghost-toggle">
+              Goryo
+              <span class="evidence-icons">
+                <img src="icons/ultraviolet.png" alt="Ultraviolet" />
+                <img src="icons/emf.png" alt="EMF 5" />
+                <img src="icons/dots.png" alt="D.O.T.S." />
+              </span>
+            </button>
+            <div class="ghost-details">
+              <p><strong>Hunting Threshold:</strong> 50% sanity</p>
+              <p>
+                <strong>Special Traits:</strong> Only shows itself on D.O.T.S.
+                through a video camera. Doesn't change favorite room.
+              </p>
+              <p><strong>Evidence:</strong> Ultraviolet, EMF 5, D.O.T.S.</p>
+            </div>
+          </div>
+
+          <div
+            class="ghost-item"
+            data-ghost-name="Hantu"
+            data-evidence="freezing,ultraviolet,ghost-orbs"
+          >
+            <button class="ghost-toggle">
+              Hantu
+              <span class="evidence-icons">
+                <img src="icons/freezing.png" alt="Freezing Temps" />
+                <img src="icons/ultraviolet.png" alt="Ultraviolet" />
+                <img src="icons/ghost-orbs.png" alt="Ghost Orbs" />
+              </span>
+            </button>
+            <div class="ghost-details">
+              <p><strong>Hunting Threshold:</strong> 50% sanity</p>
+              <p>
+                <strong>Special Traits:</strong> Moves faster in colder
+                temperatures.
+              </p>
+              <p>
+                <strong>Evidence:</strong> Freezing Temps, Ultraviolet, Ghost
+                Orbs
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="ghost-item"
+            data-ghost-name="Jinn"
+            data-evidence="freezing,ultraviolet,emf"
+          >
+            <button class="ghost-toggle">
+              Jinn
+              <span class="evidence-icons">
+                <img src="icons/freezing.png" alt="Freezing Temps" />
+                <img src="icons/ultraviolet.png" alt="Ultraviolet" />
+                <img src="icons/emf.png" alt="EMF 5" />
+              </span>
+            </button>
+            <div class="ghost-details">
+              <p><strong>Hunting Threshold:</strong> 50% sanity</p>
+              <p>
+                <strong>Special Traits:</strong> Faster when further away from
+                the player. EMF 2 at the fuse box.
+              </p>
+              <p>
+                <strong>Evidence:</strong> Freezing Temps, Ultraviolet, EMF 5
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="ghost-item"
+            data-ghost-name="Mare"
+            data-evidence="spirit-box,ghost-writing,ghost-orbs"
+          >
+            <button class="ghost-toggle">
+              Mare
+              <span class="evidence-icons">
+                <img src="icons/spirit-box.png" alt="Spirit Box" />
+                <img src="icons/ghost-writing.png" alt="Ghost Writing" />
+                <img src="icons/ghost-orbs.png" alt="Ghost Orbs" />
+              </span>
+            </button>
+            <div class="ghost-details">
+              <p><strong>Hunting Threshold:</strong> 40-60% sanity (lights)</p>
+              <p>
+                <strong>Special Traits:</strong> Can turn lights off
+                immediately. Can't turn lights on.
+              </p>
+              <p>
+                <strong>Evidence:</strong> Spirit Box, Ghost Writing, Ghost Orbs
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="ghost-item"
+            data-ghost-name="Myling"
+            data-evidence="ultraviolet,emf,ghost-writing"
+          >
+            <button class="ghost-toggle">
+              Myling
+              <span class="evidence-icons">
+                <img src="icons/ultraviolet.png" alt="Ultraviolet" />
+                <img src="icons/emf.png" alt="EMF 5" />
+                <img src="icons/ghost-writing.png" alt="Ghost Writing" />
+              </span>
+            </button>
+            <div class="ghost-details">
+              <p><strong>Hunting Threshold:</strong> 50% sanity</p>
+              <p>
+                <strong>Special Traits:</strong> Quiet when it hunts. More vocal
+                on parabolic.
+              </p>
+              <p>
+                <strong>Evidence:</strong> Ultraviolet, EMF 5, Ghost Writing
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="ghost-item"
+            data-ghost-name="Obake"
+            data-evidence="ultraviolet,emf,ghost-orbs"
+          >
+            <button class="ghost-toggle">
+              Obake
+              <span class="evidence-icons">
+                <img src="icons/ultraviolet.png" alt="Ultraviolet" />
+                <img src="icons/emf.png" alt="EMF 5" />
+                <img src="icons/ghost-orbs.png" alt="Ghost Orbs" />
+              </span>
+            </button>
+            <div class="ghost-details">
+              <p><strong>Hunting Threshold:</strong> 50% sanity</p>
+              <p>
+                <strong>Special Traits:</strong> Can leave 6 fingerprints and
+                can shapeshift during a hunt.
+              </p>
+              <p><strong>Evidence:</strong> EMF 5, Ultraviolet, Ghost Orbs</p>
+            </div>
+          </div>
+
+          <div
+            class="ghost-item"
+            data-ghost-name="Oni"
+            data-evidence="freezing,emf,dots"
+          >
+            <button class="ghost-toggle">
+              Oni
+              <span class="evidence-icons">
+                <img src="icons/freezing.png" alt="Freezing Temps" />
+                <img src="icons/emf.png" alt="EMF 5" />
+                <img src="icons/dots.png" alt="D.O.T.S." />
+              </span>
+            </button>
+            <div class="ghost-details">
+              <p><strong>Hunting Threshold:</strong> 50% sanity</p>
+              <p>
+                <strong>Special Traits:</strong> Cannot perform airball. Visible
+                for longer in a hunt.
+              </p>
+              <p><strong>Evidence:</strong> Freezing Temps, EMF 5, D.O.T.S.</p>
+            </div>
+          </div>
+
+          <div
+            class="ghost-item"
+            data-ghost-name="Onryo"
+            data-evidence="freezing,spirit-box,ghost-orbs"
+          >
+            <button class="ghost-toggle">
+              Onryo
+              <span class="evidence-icons">
+                <img src="icons/freezing.png" alt="Freezing Temps" />
+                <img src="icons/spirit-box.png" alt="Spirit Box" />
+                <img src="icons/ghost-orbs.png" alt="Ghost Orbs" />
+              </span>
+            </button>
+            <div class="ghost-details">
+              <p><strong>Hunting Threshold:</strong> 60% sanity</p>
+              <p>
+                <strong>Special Traits:</strong> Blows out 3 firelights and can
+                hunt.
+              </p>
+              <p>
+                <strong>Evidence:</strong> Freezing Temps, Spirit Box, Ghost
+                Orbs
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="ghost-column">
+          <div
+            class="ghost-item"
+            data-ghost-name="Phantom"
+            data-evidence="ultraviolet,spirit-box,dots"
+          >
+            <button class="ghost-toggle">
+              Phantom
+              <span class="evidence-icons">
+                <img src="icons/ultraviolet.png" alt="Ultraviolet" />
+                <img src="icons/spirit-box.png" alt="Spirit Box" />
+                <img src="icons/dots.png" alt="D.O.T.S." />
+              </span>
+            </button>
+            <div class="ghost-details">
+              <p><strong>Hunting Threshold:</strong> 50% sanity</p>
+              <p>
+                <strong>Special Traits:</strong> Roams to random player.
+                invisible for longer during hunt.
+              </p>
+              <p>
+                <strong>Evidence:</strong> Ultraviolet, Spirit Box, D.O.T.S.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="ghost-item"
+            data-ghost-name="Poltergeist"
+            data-evidence="ultraviolet,spirit-box,ghost-writing"
+          >
+            <button class="ghost-toggle">
+              Poltergeist
+              <span class="evidence-icons">
+                <img src="icons/ultraviolet.png" alt="Ultraviolet" />
+                <img src="icons/spirit-box.png" alt="Spirit Box" />
+                <img src="icons/ghost-writing.png" alt="Ghost Writing" />
+              </span>
+            </button>
+            <div class="ghost-details">
+              <p><strong>Hunting Threshold:</strong> 50% sanity</p>
+              <p>
+                <strong>Special Traits:</strong> Can throw multiple objects. Can
+                throw objects further.
+              </p>
+              <p>
+                <strong>Evidence:</strong> Ultraviolet, Spirit Box, Ghost
+                Writing
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="ghost-item"
+            data-ghost-name="Raiju"
+            data-evidence="emf,ghost-orbs,dots"
+          >
+            <button class="ghost-toggle">
+              Raiju
+              <span class="evidence-icons">
+                <img src="icons/emf.png" alt="EMF 5" />
+                <img src="icons/ghost-orbs.png" alt="Ghost Orbs" />
+                <img src="icons/dots.png" alt="D.O.T.S." />
+              </span>
+            </button>
+            <div class="ghost-details">
+              <p>
+                <strong>Hunting Threshold:</strong> 50-65% sanity (electronic
+                equipment near)
+              </p>
+              <p>
+                <strong>Special Traits:</strong> Faster around electronic
+                equipment.
+              </p>
+              <p><strong>Evidence:</strong> EMF 5, Ghost Orbs, D.O.T.S.</p>
+            </div>
+          </div>
+
+          <div
+            class="ghost-item"
+            data-ghost-name="Revenant"
+            data-evidence="freezing,ghost-writing,ghost-orbs"
+          >
+            <button class="ghost-toggle">
+              Revenant
+              <span class="evidence-icons">
+                <img src="icons/freezing.png" alt="Freezing Temps" />
+                <img src="icons/ghost-writing.png" alt="Ghost Writing" />
+                <img src="icons/ghost-orbs.png" alt="Ghost Orbs" />
+              </span>
+            </button>
+            <div class="ghost-details">
+              <p><strong>Hunting Threshold:</strong> 50% sanity</p>
+              <p><strong>Special Traits:</strong> Faster with Line of Sight.</p>
+              <p>
+                <strong>Evidence:</strong> Freezing Temps, Ghost Writing, Ghost
+                Orbs
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="ghost-item"
+            data-ghost-name="Shade"
+            data-evidence="freezing,emf,ghost-writing"
+          >
+            <button class="ghost-toggle">
+              Shade
+              <span class="evidence-icons">
+                <img src="icons/freezing.png" alt="Freezing Temps" />
+                <img src="icons/emf.png" alt="EMF 5" />
+                <img src="icons/ghost-writing.png" alt="Ghost Writing" />
+              </span>
+            </button>
+            <div class="ghost-details">
+              <p><strong>Hunting Threshold:</strong> 35% sanity</p>
+              <p>
+                <strong>Special Traits:</strong> Cannot do anything with player
+                in the room.
+              </p>
+              <p>
+                <strong>Evidence:</strong> Freezing Temps, EMF 5, Ghost Writing
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="ghost-item"
+            data-ghost-name="Spirit"
+            data-evidence="emf,spirit-box,ghost-writing"
+          >
+            <button class="ghost-toggle">
+              Spirit
+              <span class="evidence-icons">
+                <img src="icons/emf.png" alt="EMF 5" />
+                <img src="icons/spirit-box.png" alt="Spirit Box" />
+                <img src="icons/ghost-writing.png" alt="Ghost Writing" />
+              </span>
+            </button>
+            <div class="ghost-details">
+              <p><strong>Hunting Threshold:</strong> 50% sanity</p>
+              <p>
+                <strong>Special Traits:</strong> smudge lasts twice as long (180
+                sec).
+              </p>
+              <p><strong>Evidence:</strong> EMF 5, Spirit Box, Ghost Writing</p>
+            </div>
+          </div>
+
+          <div
+            class="ghost-item"
+            data-ghost-name="Thaye"
+            data-evidence="ghost-writing,ghost-orbs,dots"
+          >
+            <button class="ghost-toggle">
+              Thaye
+              <span class="evidence-icons">
+                <img src="icons/ghost-writing.png" alt="Ghost Writing" />
+                <img src="icons/ghost-orbs.png" alt="Ghost Orbs" />
+                <img src="icons/dots.png" alt="D.O.T.S." />
+              </span>
+            </button>
+            <div class="ghost-details">
+              <p>
+                <strong>Hunting Threshold:</strong> 75% sanity (goes down over
+                time)
+              </p>
+              <p>
+                <strong>Special Traits:</strong> weakens over time from aging.
+              </p>
+              <p>
+                <strong>Evidence:</strong> Ghost Writing, Ghost Orbs, D.O.T.S.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="ghost-item"
+            data-ghost-name="The Mimic"
+            data-evidence="freezing,ultraviolet,spirit-box"
+          >
+            <button class="ghost-toggle">
+              The Mimic
+              <span class="evidence-icons">
+                <img src="icons/freezing.png" alt="Freezing Temps" />
+                <img src="icons/ultraviolet.png" alt="Ultraviolet" />
+                <img src="icons/spirit-box.png" alt="spirit-box" />
+              </span>
+            </button>
+            <div class="ghost-details">
+              <p><strong>Hunting Threshold:</strong> any sanity</p>
+              <p>
+                <strong>Special Traits:</strong> Can imitate any ghost. will
+                always have Ghost Orbs.
+              </p>
+              <p>
+                <strong>Evidence:</strong> Freezing Temps, Ultraviolet, Spirit
+                Box
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="ghost-item"
+            data-ghost-name="The Twins"
+            data-evidence="freezing,emf,spirit-box"
+          >
+            <button class="ghost-toggle">
+              The Twins
+              <span class="evidence-icons">
+                <img src="icons/freezing.png" alt="Freezing Temps" />
+                <img src="icons/emf.png" alt="EMF 5" />
+                <img src="icons/spirit-box.png" alt="spirit-box" />
+              </span>
+            </button>
+            <div class="ghost-details">
+              <p><strong>Hunting Threshold:</strong> 50% sanity</p>
+              <p>
+                <strong>Special Traits:</strong> Can interact in two locations.
+                Faster and Slower hunting speeds.
+              </p>
+              <p>
+                <strong>Evidence:</strong> Freezing Temps, EMF 5, Spirit Box
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="ghost-item"
+            data-ghost-name="Yokai"
+            data-evidence="spirit-box,ghost-orbs,dots"
+          >
+            <button class="ghost-toggle">
+              Yokai
+              <span class="evidence-icons">
+                <img src="icons/spirit-box.png" alt="Spirit Box" />
+                <img src="icons/ghost-orbs.png" alt="Ghost Orbs" />
+                <img src="icons/dots.png" alt="D.O.T.S." />
+              </span>
+            </button>
+            <div class="ghost-details">
+              <p>
+                <strong>Hunting Threshold:</strong> 50-80% sanity (talking near
+                ghost)
+              </p>
+              <p>
+                <strong>Special Traits:</strong> talking near the ghost will
+                increase activity.
+              </p>
+              <p><strong>Evidence:</strong> Spirit Box, Ghost Orbs, D.O.T.S.</p>
+            </div>
+          </div>
+
+          <div
+            class="ghost-item"
+            data-ghost-name="Yurei"
+            data-evidence="freezing,ghost-orbs,dots"
+          >
+            <button class="ghost-toggle">
+              Yurei
+              <span class="evidence-icons">
+                <img src="icons/freezing.png" alt="Freezing Temps" />
+                <img src="icons/ghost-orbs.png" alt="Ghost Orbs" />
+                <img src="icons/dots.png" alt="D.O.T.S." />
+              </span>
+            </button>
+            <div class="ghost-details">
+              <p><strong>Hunting Threshold:</strong> 50% sanity</p>
+              <p>
+                <strong>Special Traits:</strong> Smudging will trap ghost for 90
+                seconds. Ghost can shut doors all the way.
+              </p>
+              <p>
+                <strong>Evidence:</strong> Freezing Temps, Ghost Orbs, D.O.T.S.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Toggle the ghost details when clicking on a ghost
+      const toggles = document.querySelectorAll(".ghost-toggle");
+      toggles.forEach((toggle) => {
+        toggle.addEventListener("click", function () {
+          const details = this.nextElementSibling;
+          details.style.display =
+            details.style.display === "block" ? "none" : "block";
+        });
+      });
+
+      // Search functionality
+      const searchBar = document.getElementById("search-bar");
+      const ghostItems = document.querySelectorAll(".ghost-item");
+
+      searchBar.addEventListener("input", function () {
+        const filter = searchBar.value.toLowerCase();
+        ghostItems.forEach((item) => {
+          const ghostName = item.getAttribute("data-ghost-name").toLowerCase();
+          if (ghostName.includes(filter)) {
+            item.style.display = "block";
+          } else {
+            item.style.display = "none";
+          }
+        });
+      });
+
+      // Evidence filter functionality
+      const evidenceButtons = document.querySelectorAll(".evidence-button");
+      let selectedEvidences = [];
+
+      evidenceButtons.forEach((button) => {
+        button.addEventListener("click", function () {
+          const evidence = this.getAttribute("data-evidence");
+
+          // Toggle the selection
+          if (selectedEvidences.includes(evidence)) {
+            selectedEvidences = selectedEvidences.filter((e) => e !== evidence);
+            this.classList.remove("selected");
+          } else {
+            selectedEvidences.push(evidence);
+            this.classList.add("selected");
+          }
+
+          // Filter ghosts based on selected evidence
+          ghostItems.forEach((item) => {
+            const ghostEvidences = item
+              .getAttribute("data-evidence")
+              .split(",");
+            const hasAllEvidences = selectedEvidences.every((e) =>
+              ghostEvidences.includes(e)
+            );
+            if (hasAllEvidences) {
+              item.style.display = "block";
+            } else {
+              item.style.display = "none";
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
